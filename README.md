@@ -6,7 +6,7 @@
     <a href="#"><img alt="GitHub language count" src="https://img.shields.io/github/languages/count/HacOkars/Hacktoberfest-2021"></a>
     <a href="https://github.com/digitalocean/hacktoberfest/search?l=ruby"><img alt="GitHub top language"src="https://img.shields.io/github/languages/top/HacOkars/Hacktoberfest-2021"></a>
     <br>
-    <img alt="Snyk Vulnerabilities for GitHub Repo" src="https://img.shields.io/snyk/vulnerabilities/HacOkars/Hacktoberfest-2021">
+    
 </p>
 <p align="center">
     <img src="assets/images/logo-hacktoberfest-2021.svg" alt="Hacktoberfest-2020 Logo" width="350">
@@ -59,5 +59,15 @@ Once the Pull Request is made we will verify your solutions and merge the Pull R
 
 Wahoo!!!....
 
+### Guidelines for Contributions :
 
+1. Always use a valid github Username for naming the folder that would contain your solutions.
+
+2. There is no restrictions over language you are using to code the solution You can use any valid commonly used Programming languages.
+
+3. When you are writing a solution to a problem try sticking to the same programming language for other solutions also.
+
+4. Before making a valid pull request you should have pushed atleast 5 solutions to different problems from the Problem List add it into a single folder and then make pull request.
+
+5. Your solution must be compiled and checked against the given test cases before making a pull request.
  
