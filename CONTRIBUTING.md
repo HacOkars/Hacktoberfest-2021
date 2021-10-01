@@ -28,6 +28,6 @@ These are the listing of individuals to this project **who've finished five prob
 
 > <img src="https://avatars.githubusercontent.com/u/67056908?v=4" width="50"> [Suman More](https://github.com/SumanMore)
 
-> img src="https://avatars.githubusercontent.com/u/85413089?v=4" width="50"> [Prashant_Kushwaha](https://github.com/praku27) 
+> <img src="https://avatars.githubusercontent.com/u/85413089?v=4" width="50"> [Prashant_Kushwaha](https://github.com/praku27)
 
 
