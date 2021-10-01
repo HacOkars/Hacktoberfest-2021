@@ -1,0 +1,22 @@
+class Solution {
+public:
+    int minTotalUntil(vector<vector<int>> triangle, int index, int height, vector<vector<int>>& dp){
+        if(height+1==triangle.size())
+            return triangle[height][index];
+        if(dp[height][index]!=-1)
+            return dp[height][index];
+        int sum,m1,m2;
+        m1 = minTotalUntil(triangle,index,height+1,dp);
+        m2 = minTotalUntil(triangle,index+1,height+1,dp);
+        sum = triangle[height][index] + min(m1,m2);
+        return dp[height][index] = sum;
+    }
+    int minimumTotal(vector<vector<int>>& triangle) {
+        //now lets think recursively 
+        //lets memoize this solution
+        int H,W;
+        H=triangle.size(), W=triangle[H-1].size();
+        vector<vector<int>> dp(H+1,vector(W+1,-1));
+        return minTotalUntil(triangle,0,0,dp);
+    }
+};

@@ -1,0 +1,27 @@
+public class Problem4 {
+	
+	public static void main(String[] args) {
+		int res=reverse();
+		System.out.println(res);
+	}
+	
+	public static int reverse() {
+		int max=0;
+		for(int i=999;i>=0;i--) {
+			for(int j=999;j>=0;j--) {
+				int pdt=i*j;
+				int rev=0;
+			    int temp=pdt;
+				while(temp!=0) {
+					int rem=temp%10;
+					rev=rev*10+rem;
+					temp/=10;
+				}
+				if(pdt==rev && pdt>max) {
+					max=pdt;
+				}
+			}
+		}
+		return max;
+	}
+}

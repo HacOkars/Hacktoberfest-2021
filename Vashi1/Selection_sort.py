@@ -1,0 +1,12 @@
+# Program to implement selection sort in python
+A = eval(input("Enter the list to be sorted: "))
+for i in range(len(A)):
+   min_= i
+   for j in range(i+1, len(A)):
+      if A[min_] > A[j]:
+         min_ = j
+   #swap
+A[i], A[min_] = A[min_], A[i]
+# main
+for i in range(len(A)):
+   print(A[i])

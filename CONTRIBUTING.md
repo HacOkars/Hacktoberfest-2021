@@ -40,6 +40,24 @@ These are the listing of individuals to this project **who've finished five prob
 
 > <img src="https://avatars.githubusercontent.com/u/73055393?v=4" width="50"> [shiv shankar yadav](https://github.com/shivyadav10012001)
 
+> <img src="https://avatars.githubusercontent.com/u/82171742?v=4" width="50"> [Sanskar Nougrahiya](https://github.com/sanskarn17)
 
+> <img src= "https://avatars.githubusercontent.com/u/68043017?v=4" width="50"> [Apurv Kumar](https://github.com/Apurv0007)
+ 
+> <img src="https://avatars.githubusercontent.com/u/66875383?v=4" width="50"> [Aaditya Mittal](https://github.com/aadityamittal)
 
+> <img src="https://avatars.githubusercontent.com/u/77060299?v=4" width="50"> [Shivangi Sahu](https://github.com/shivangisahu12)
 
+> <img src="https://avatars.githubusercontent.com/u/53517969?v=4" width="50"> [Rahul Kumar Jha](https://github.com/rahulkumarjha21)
+
+> <img src="https://avatars.githubusercontent.com/u/49654230?v=4" width="50"> [Varsha M](https://github.com/varshamanjunath)
+ 
+> <img src="https://avatars.githubusercontent.com/u/46316452?v=4" width="50"> [Akshay Nachappa](https://github.com/AkshayNachappa)
+
+> <img src="https://avatars.githubusercontent.com/u/85963175?v=4"  width="50"> [Priyansu Pritam Sahoo](https://github.com/priyansupritam)
+ 
+> <img src="https://avatars.githubusercontent.com/u/68225758?v=4"  width="50"> [SHUWANI](https://github.com/Shuwani)
+
+> <img src="https://avatars.githubusercontent.com/u/45453951?s=400&v=4"  width="50"> [Charalambos Ioannou](https://github.com/CharalambosIoannou)
+
+> <img src="https://avatars.githubusercontent.com/u/73055393?v=4"  width="50"> [Shiv Shankar Yadav](https://github.com/shivyadav10012001)
