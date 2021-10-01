@@ -42,4 +42,4 @@ These are the listing of individuals to this project **who've finished five prob
 
 > <img src="https://avatars.githubusercontent.com/u/66875383?v=4" width="50"> [Aaditya Mittal](https://github.com/aadityamittal)
 
-
+> <img src= "https://avatars.githubusercontent.com/u/68043017?v=4"width="50"> [Apurv Kumar](https://github.com/aadityamittal)
