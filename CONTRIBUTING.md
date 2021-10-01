@@ -40,6 +40,8 @@ These are the listing of individuals to this project **who've finished five prob
 
 > <img src="https://avatars.githubusercontent.com/u/82171742?v=4" width="50"> [Sanskar Nougrahiya](https://github.com/sanskarn17)
 
+> <img src= "https://avatars.githubusercontent.com/u/68043017?v=4"width="50"> [Apurv Kumar](https://github.com/Apurv0007)
+ 
 > <img src="https://avatars.githubusercontent.com/u/66875383?v=4" width="50"> [Aaditya Mittal](https://github.com/aadityamittal)
 
 > <img src="https://avatars.githubusercontent.com/u/77060299?v=4" width="50"> [Shivangi Sahu](https://github.com/shivangisahu12)
