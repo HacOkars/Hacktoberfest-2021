@@ -28,5 +28,7 @@ These are the listing of individuals to this project **who've finished five prob
 
 > <img src="https://avatars.githubusercontent.com/u/67056908?v=4" width="50"> [Suman More](https://github.com/SumanMore)
 
+> <img src="https://avatars.githubusercontent.com/u/54362793?v=4" width="50"> [Shashank Kumar](https://github.com/221bshashank)
+
 
 
