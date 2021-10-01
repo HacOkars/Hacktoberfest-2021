@@ -1,3 +1,5 @@
+# link https://codeforces.com/contest/1398/problem/A
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()
