@@ -27,8 +27,8 @@ These are the listing of individuals to this project **who've finished five prob
 > <img src="https://avatars.githubusercontent.com/u/79396219?v=4"  width="50"> [Shnigdha Suman Sahoo](https://github.com/Shnigdha)
 
 > <img src="https://avatars.githubusercontent.com/u/67056908?v=4" width="50"> [Suman More](https://github.com/SumanMore)
+
 > <img src="https://avatars.githubusercontent.com/u/85955760?v=4" width="50"> [Ashutosh Anand](https://github.com/Ashutosh-107)
-> 
 
 > <img src="https://avatars.githubusercontent.com/u/91720401?v=4" width="50"> [Santosh Raj Choudhary](https://github.com/SRChoudhary672)
 
