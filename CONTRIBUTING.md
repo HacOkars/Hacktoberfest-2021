@@ -53,6 +53,7 @@ These are the listing of individuals to this project **who've finished five prob
 > <img src="https://avatars.githubusercontent.com/u/46316452?v=4" width="50"> [Akshay Nachappa](https://github.com/AkshayNachappa)
 
 > <img src="https://avatars.githubusercontent.com/u/85963175?v=4"  width="50"> [Priyansu Pritam Sahoo](https://github.com/priyansupritam)
+ 
 > <img src="https://avatars.githubusercontent.com/u/68225758?v=4"  width="50"> [SHUWANI](https://github.com/Shuwani)
 
 > <img src="https://avatars.githubusercontent.com/u/45453951?s=400&v=4"  width="50"> [Charalambos Ioannou](https://github.com/CharalambosIoannou)
