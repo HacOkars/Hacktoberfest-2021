@@ -15,6 +15,7 @@ bool check(ll ar[],ll mid,ll cows ,ll n)
         if(count==cows)
          return true;
     }
+    
     return false;
     
 }

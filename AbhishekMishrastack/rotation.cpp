@@ -1,15 +1,18 @@
 #include <bits/stdc++.h>
+//abshiek mishra
 using namespace std;
 
 int main()
 {
   int n,r;
+
   cin>>n>>r;
   int ar[n];
   for(int i=0;i<n;i++)
   {
       cin>>ar[i];
   }
+
   int temp;
   while(r--)
   {
