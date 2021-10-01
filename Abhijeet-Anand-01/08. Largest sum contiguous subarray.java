@@ -17,7 +17,6 @@ class Contagious_subarray{
 		}
 		System.out.println(sum);
     }
-
     static int maxSubArraySum(int a[]){
         int size = a.length;
         int max_so_far = Integer.MIN_VALUE, max_ending_here = 0;
