@@ -21,5 +21,10 @@ These are the listing of individuals to this project **who've finished five prob
 ### We have successfully Completed five Problems
 
 > <img src="https://avatars.githubusercontent.com/u/62745286?v=4" width="50"> [Rituraj Gupta](https://github.com/RiturajGupta21)
+
 > <img src="https://avatars.githubusercontent.com/u/54390873?v=4" width="50"> [Kshitiz Ranjan](https://github.com/kshitizranjan15)
-<img src="https://avatars.githubusercontent.com/u/79396219?v=4"  width="50"> [Shnigdha Suman Sahoo](https://github.com/Shnigdha)
+
+> <img src="https://avatars.githubusercontent.com/u/67056908?v=4" width="50"> [Suman More](https://github.com/SumanMore)
+
+> <img src="https://avatars.githubusercontent.com/u/79396219?v=4"  width="50"> [Shnigdha Suman Sahoo](https://github.com/Shnigdha)
+
