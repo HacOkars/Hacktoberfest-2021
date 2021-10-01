@@ -1,0 +1,11 @@
+class GfG
+{
+    int strstr(String s, String x)
+    {
+         if (s.contains(x)) {
+             int index = s.indexOf(x);
+             return index;
+         }
+         return -1;
+    }
+}

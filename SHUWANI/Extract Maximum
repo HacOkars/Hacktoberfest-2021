@@ -1,0 +1,19 @@
+class Solution 
+{ 
+    static int extractMaximum(String S) 
+    { 
+        int ans = -1;
+        String temp = "";
+        for(char d : S.toCharArray()) {
+            int val = (int) d;
+            if(val < 58 && val > 47) {
+                temp += String.valueOf(d);
+                ans = Math.max(Integer.parseInt(temp), ans);
+            } 
+            else {
+                temp = "";
+            }
+        }
+        return ans;
+    }    
+} 
