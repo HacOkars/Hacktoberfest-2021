@@ -19,3 +19,5 @@ These are the listing of individuals to this project **who've finished five prob
 # Main Contributors
 
 ### We have successfully Completed five Problems
+
+> <img src="https://avatars.githubusercontent.com/u/62745286?v=4" width="50"> [Rituraj Gupta](https://github.com/RiturajGupta21)
