@@ -1,0 +1,63 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+     #ifndef ONLINE_JUDGE
+          freopen("input","r",stdin);
+          freopen("outputf.txt","w",stdout);
+  #endif
+   int n,m ;
+    cin>> m;
+    int A[2*m+1 ] ;   
+    for(int i=0;i<2*m +1;i++)
+        cin>>A[i];        
+        cin>> n;
+        int B[2*n+1] ;   
+    for(int i=0;i<2*n+1;i++)
+            cin>>B[i];
+            int c[2*(m+n)+1] ;
+    for(int i=0;i<2*(m+n)+1;i++)
+                c[i]=0;        
+                int p=1,q=1,r=1 ;
+                while(p<=2*m && q<=2*n)
+                {   if(A[p]==B[q])
+                {
+                    c[r+1]=A[p+1]+B[q+1] ;
+                    c[r]=A[p] ;
+                    r=r+2 ;
+                    p=p+2 ;
+                    q=q+2 ;
+                }
+                else if(A[p]<B[q])
+                {
+                    c[r]=B[q] ;
+                    c[r+1]=B[q+1] ;
+                    q=q+2 ;
+                    r=r+2 ;
+                }
+                else if(A[p]>B[q])
+                { c[r]=A[p] ;
+                    c[r+1]=A[p+1] ;
+                    p=p+2 ;
+                    r=r+2 ;
+                }
+                }
+                while(p<=2*m)
+                {
+                    c[r]=A[p] ;
+                    c[r+1]=A[p+1] ;
+                    p=p+2 ;
+                    r=r+2 ;
+                }
+                while(q<=2*n)
+                {
+                    c[r+1]=B[q+1] ;
+                    c[r]=B[q] ;
+                    q=q+2 ;
+                    r=r+2 ;
+                }
+                c[0]=r/2  ;
+                
+                for(int j=0;j<r;j++)
+                    cout<<c[j]<<" ";  
+    return 0;
+}
