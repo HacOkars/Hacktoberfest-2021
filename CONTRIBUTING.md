@@ -50,3 +50,5 @@ These are the listing of individuals to this project **who've finished five prob
 
 > <img src="https://avatars.githubusercontent.com/u/49654230?v=4" width="50"> [Varsha M](https://github.com/varshamanjunath)
  
+> <img src="https://avatars.githubusercontent.com/u/46316452?v=4" width="50"> [Akshay Nachappa](https://github.com/AkshayNachappa)
+
