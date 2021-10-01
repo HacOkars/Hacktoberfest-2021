@@ -1,5 +1,5 @@
 import java.util.*;
-public class QUES01
+public class p1
 {
     static void c(int ar[], int n, int x)
     {
