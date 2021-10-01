@@ -8,7 +8,6 @@ class Union_intersection{
 
 		unionhashmap(arr1, arr2);
 		printIntersection(arr1, arr2);
-
 	}
 
 	public static void unionhashmap(int[] arr1, int[] arr2) {
@@ -52,7 +51,6 @@ class Union_intersection{
 				temp[arr1.length + i] = arr2[i];
 			}
 		}
-
 		return temp;
 	}
 
@@ -68,9 +66,6 @@ class Union_intersection{
 				return true;
 			}
 		}
-
 		return false;
-
 	}
-
 }
