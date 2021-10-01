@@ -38,6 +38,8 @@ These are the listing of individuals to this project **who've finished five prob
 
 > <img src="https://avatars.githubusercontent.com/u/91720401?v=4" width="50"> [Santosh Raj Choudhary](https://github.com/SRChoudhary672)
 
+> <img src="https://avatars.githubusercontent.com/u/73055393?v=4" width="50"> [shiv shankar yadav](https://github.com/shivyadav10012001)
+
 > <img src="https://avatars.githubusercontent.com/u/82171742?v=4" width="50"> [Sanskar Nougrahiya](https://github.com/sanskarn17)
 
 > <img src= "https://avatars.githubusercontent.com/u/68043017?v=4" width="50"> [Apurv Kumar](https://github.com/Apurv0007)
@@ -59,6 +61,3 @@ These are the listing of individuals to this project **who've finished five prob
 > <img src="https://avatars.githubusercontent.com/u/45453951?s=400&v=4"  width="50"> [Charalambos Ioannou](https://github.com/CharalambosIoannou)
 
 > <img src="https://avatars.githubusercontent.com/u/73055393?v=4"  width="50"> [Shiv Shankar Yadav](https://github.com/shivyadav10012001)
-
-
-
