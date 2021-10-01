@@ -25,6 +25,5 @@ System.out.println(p);
 }
 }
 
-
 //output:
 //104743
