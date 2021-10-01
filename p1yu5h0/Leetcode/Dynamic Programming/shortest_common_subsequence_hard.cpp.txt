@@ -1,0 +1,80 @@
+class Solution {
+public:
+    string printlcs(string a, string b, int m, int n){
+        //printing of lcs code
+        //we pass string a, string b, m which is length of a and n which is length of b
+        
+        //remember first to make the dp table by which we will realise which element to choose and which not
+        //to choose 
+        
+        //initialization of dp table
+        int dp[m+1][n+1];
+        for(int i=0;i<=m;i++)
+            dp[i][0] = 0;
+        for(int i=0;i<=n;i++)
+            dp[0][i] = 0;
+        
+        //filling up of dp table 
+        for(int i=1;i<=m;i++){
+            for(int j=1;j<=n;j++){
+                if(a[i-1]==b[j-1]){
+                    dp[i][j] = 1 + dp[i-1][j-1];
+                } else {
+                    dp[i][j] = max(dp[i-1][j],dp[i][j-1]);
+                }
+            }
+        }
+        
+        //now since our dp table is filled we will go from last element of the dp table ie. dp[m][n]
+        //to the first row or first column where the value becomes zero of any of the strings 
+        //remember how to write the code of this thing 
+        
+        string ans;
+        int i = m;
+        int j = n;
+        while(i > 0 and j > 0){
+            if(a[i-1] == b[j-1]){
+                ans.push_back(a[i-1]);
+                i--;
+                j--;
+            } else {
+                if(dp[i-1][j] > dp[i][j-1] ){
+                    ans.push_back(a[i-1]);
+                    i--;
+                } else {
+                    ans.push_back(b[j-1]);
+                    j--;
+                }
+            } 
+        }
+        while(i > 0) { 
+            ans.push_back(a[i-1]); 
+            i--; 
+        }
+        while(j > 0) { 
+            ans.push_back(b[j-1]); 
+            j--; 
+        }
+        
+        //since we know that the string which we got in the end is reverse of the lcs 
+        //so we again do reverse of this 
+        
+        reverse(ans.begin(),ans.end());
+        return ans;
+        
+    }
+    
+    string shortestCommonSupersequence(string str1, string str2) {
+        int m=str1.size(), n=str2.size();
+        return printlcs(str1,str2,m,n);
+    }
+    
+};
+
+/*
+- in Aditya Verma playlist, he taught to find the length of shortest-common-subsequence
+- this question is an extension to that
+- remember the formula which we derived at the end was str1.length() + str2.length() - lcs.length()
+- i think we can use the same thing here like concate str1 and str2, and then remove the lcs elements
+- first write the print of lcs code which he taught 
+*/

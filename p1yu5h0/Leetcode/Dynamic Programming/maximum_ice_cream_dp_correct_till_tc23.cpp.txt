@@ -1,0 +1,42 @@
+class Solution {
+public:
+    int numberOfBars(vector<int>& costs, int w, int n){
+        
+        int dp[n][n+1];
+        memset(dp,9999999,sizeof(dp));
+        
+        for(int i = 0; i < n; i++)
+        for(int j = 1; j <= n; j++)
+            if(i > 0)
+                dp[i][j] = min(min(dp[i][j], dp[i - 1][j]), dp[i - 1][j - 1] + costs[i]);
+            else
+                dp[i][j] = (j == 1)? costs[0] : 9999999;       
+        int ans = 0;
+        for(int i = 0; i < n; i++)
+            for(int j = 0; j <= n; j++)
+                if(dp[i][j] <= w)
+                    ans = max(ans, j);
+        return ans;
+        
+    }
+    
+    int maxIceCream(vector<int>& costs, int coins) {
+        //now lets think dp
+        int n=costs.size(), w=coins;
+        return numberOfBars(costs, w, n);
+    }
+    
+};
+/*
+
+- we can see only one array is given so that must be our weight array
+- lets think in the standard knapsack way
+- we need to maximize the number of bars
+- for that lets first think of a base condition
+- we can see that when the costs.size() or number of coins become zero, bar he can buy is zero 
+- this can be our base condition
+- remember in knapsack we start to take the elements from the end of the array 
+- This is a special case of the 0/1 knapsack problem where the value of every item is uniform. 
+- In such a case, dynamic programming is simply time consuming. Sorting is clearly the better option.
+
+*/

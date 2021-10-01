@@ -1,0 +1,63 @@
+class Solution {
+public:
+    int lastStoneWeightII(vector<int>& stones) {
+        //minimum subset sum concept will be used here
+        
+        int sum=0, n=stones.size();
+        
+        //lets store the sum of all stones into a variable sum
+        for(int i=0;i<n;i++)
+            sum+=stones[i];
+        
+        //now lets initialize our dp
+        int old_sum=sum;
+        sum=sum/2;
+        int dp[n+1][sum+1];
+        for(int i=0;i<sum+1;i++)
+            dp[0][i]=0;
+        for(int i=0;i<n+1;i++)
+            dp[i][0]=1;
+        
+        //lets fill the dp 
+        for(int i=1;i<n+1;i++)
+            for(int j=1;j<sum+1;j++)
+                if(stones[i-1]<=j)
+                    dp[i][j] = dp[i-1][j] or dp[i-1][j-stones[i-1]];
+                else 
+                    dp[i][j] = dp[i-1][j];
+        
+        //we know that we are just intrested in the last nth row of the dp 
+        //so just store the values that have value 1 in the last row of the dp table in a vector 
+        vector<int> lastRow;
+        for(int i=0;i<sum+1;i++)
+            if(dp[n][i]==1)
+                lastRow.push_back(i);
+        
+        //now we just need to find the minimum value and use that formula 
+        int ans = INT_MAX;
+        for(int i=0;i<lastRow.size();i++)
+            ans = min(ans, old_sum-2*lastRow[i]);
+        
+        return ans;
+        
+        
+        
+    }
+};
+
+/*
+
+- let the sum of the entire array be sum.
+- let s1 be the subset 1 and s2 be the subset 2.
+- s1+s2 will alway be equal to sum...
+- lets assume that s1 is smaller than s2. So i can say that s1 will always be smaller than my total sum's half.
+- So if s1 is smaller value so i can say that s1 is smaller than or equal to sum/2; (equal only when sum is even)
+- s1+s2=sum ( equation:1)
+- s2=sum-s1 (equation:2)
+- s1+(sum-s1)=sum (from equation 1 and 2)
+- so now my s1=s1 and my s2 =sum-s1
+- so s2-s1=sum-2*s1
+- we have to find the minimum value of this equation
+- this is just minimum subset sum question
+
+*/

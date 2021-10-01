@@ -1,0 +1,22 @@
+class Solution {
+public:
+    bool searchMatrix(vector<vector<int>>& nums, int target) {
+        int i=0;
+        int m=nums.size();
+        int n=nums[i].size();
+        int j=n-1;
+         while(i<m&&j>=0){
+            if(nums[i][j]==target){
+                return true;
+            }
+             else if(nums[i][j]>target){
+                 j--;
+             } else {
+                 i++;
+             }
+        }return false;
+    }
+};
+//in example 1 we started from 7 and seen that if target is less than 7 we would go on left and if target is greater than 7 then we go down
+//if target is smaller move left and if target is greater then move down
+//dsa self paced course logic
