@@ -27,7 +27,6 @@ class TextAreaOutputStream extends OutputStream {
 		}
 	}
 }
-
 public class Server extends JFrame {
 	private static final long serialVersionUID = 1L;
 	public static SimpleDateFormat sdf = new SimpleDateFormat("<hh:mm a->");
