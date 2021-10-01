@@ -61,3 +61,7 @@ These are the listing of individuals to this project **who've finished five prob
 > <img src="https://avatars.githubusercontent.com/u/45453951?s=400&v=4"  width="50"> [Charalambos Ioannou](https://github.com/CharalambosIoannou)
 
 > <img src="https://avatars.githubusercontent.com/u/73055393?v=4"  width="50"> [Shiv Shankar Yadav](https://github.com/shivyadav10012001)
+
+> <img src="https://avatars.githubusercontent.com/u/63573906?v=4"  width="50"> [Vidhi Kumari](https://github.com/vidhi09-tech)
+
+
