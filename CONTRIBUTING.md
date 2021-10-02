@@ -25,6 +25,20 @@ These are the listing of individuals to this project **who've finished five prob
 
 ### We have successfully Completed five Problems
 
+<<<
+> <img src="https://avatars.githubusercontent.com/u/62745286?v=4" width="50"> [Rituraj Gupta](https://github.com/RiturajGupta21)
+
+> <img src="https://avatars.githubusercontent.com/u/54390873?v=4" width="50"> [Kshitiz Ranjan](https://github.com/kshitizranjan15)
+
+> <img src="https://avatars.githubusercontent.com/u/79396219?v=4"  width="50"> [Shnigdha Suman Sahoo](https://github.com/Shnigdha)
+
+> <img src="https://avatars.githubusercontent.com/u/67056908?v=4" width="50"> [Suman More](https://github.com/SumanMore)
+
+> <img src="https://avatars.githubusercontent.com/u/79264319?v=4" width="50"> [Simona Tiwari](https://github.com/TiwariSimona)
+
+
+
+
 <table>
 <tr><td align="center"><a href="https://github.com/RiturajGupta21"><kbd><img src="https://avatars3.githubusercontent.com/riturajgupta21?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Rituraj Gupta</b></sub></a><br /><a href="https://github.com/HacOkars/Hacktoberfest-2021/commits?author=riturajgupta21" title="Code"> :computer: </a> </td>
 <td align="center"><a href="https://github.com/kshitizranjan15"><kbd><img src="https://avatars3.githubusercontent.com/kshitizranjan15?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Kshitiz Ranjan</b></sub></a><br /><a href="https://github.com/HacOkars/Hacktoberfest-2021/commits?author=kshitizranjan15" title="Code"> :computer: </a> </td>
@@ -59,3 +73,4 @@ These are the listing of individuals to this project **who've finished five prob
     <td align="center"><a href="https://github.com/ankitSaebby"><kbd><img src="https://avatars.githubusercontent.com/u/54979627?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Ankit Singh</b></sub></a><br /><a href="https://github.com/HacOkars/Hacktoberfest-2021/commits?author=ankitSaebby" title="Code"> :computer: </a> </td>
 </tr>
 </table>
+
