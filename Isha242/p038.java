@@ -31,4 +31,3 @@ public final class p038 implements EulerSolution {
 		return new String(temp).equals("123456789");
 	}
 	
-}

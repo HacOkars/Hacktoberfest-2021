@@ -1,4 +1,3 @@
-
 public final class p033 implements EulerSolution {
 	
 	public static void main(String[] args) {
