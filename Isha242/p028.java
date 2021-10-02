@@ -46,7 +46,7 @@ public final class p028 implements EulerSolution {
 			}
 		}
 		return Integer.toString(denom / Library.gcd(numer, denom));
-	 * From the diagram, let's observe the four corners of an n * n square (where n is odd).
+	 /* From the diagram, let's observe the four corners of an n * n square (where n is odd).
 	 * It's not hard to convince yourself that the top right corner always has the value n^2.
 	 * Working counterclockwise (backwards), the top left corner has the value n^2 - (n - 1),
 	 * the bottom left corner has the value n^2 - 2(n - 1), and the bottom right is n^2 - 3(n - 1).
