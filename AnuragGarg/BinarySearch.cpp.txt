@@ -1,0 +1,41 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main() {
+  #ifndef ONLINE_JUDGE
+          freopen("input","r",stdin);
+          freopen("outputf.txt","w",stdout);
+  #endif
+    int n;
+    cin>>n;
+    if(n%2==0)
+    {
+        cout<<"Error"<<endl;
+        return 0 ;
+    }
+    int a[n][n];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            a[i][j]=0;
+        }
+    }
+    int key=1;
+    int i=0,j=(n)/2;
+    while(key<=n*n){
+        a[i][j]=key;
+        int k=(i+1)%n,l=(j+1)%n;
+        if(a[k][l]!=0){
+            i=(i-1+n)%n;
+        } else {
+            i=k;
+            j=l;
+        }
+        key=key+1;
+    }
+    for(int k=0;k<n;k++){
+        for(int l=0;l<n;l++){
+            cout<<a[k][l]<<" ";
+        }
+        cout<<endl;
+    }
+    
+}

@@ -1,4 +1,5 @@
 public class EulerQ12 {
+    //added
     static int num(int n)
     {
         int cnt = 0;

@@ -1,0 +1,56 @@
+/*
+// Definition for a Node.
+class Node {
+public:
+    int val;
+    Node* next;
+    Node* random;
+    
+    Node(int _val) {
+        val = _val;
+        next = NULL;
+        random = NULL;
+    }
+};
+*/
+
+class Solution {
+public:
+    Node* copyRandomList(Node* head) {
+        //brute force naive solution
+        //using a hashmap to store the nodes and then making connections
+        
+        unordered_map<Node*, Node*> mp;
+        Node* temp = head;
+        
+        //lets fist make our copy nodes and add them in the map with original nodes
+        while(temp != nullptr){
+            Node* n = new Node(temp->val);
+            mp[temp] = n;
+            temp = temp->next;
+            //in this step we are just making the copy nodes
+            //and add these given nodes and copy nodes to the map 
+            //key is the original node and the value is the copy node in the map
+        }
+        
+        //lets do second traversal again in the ll
+        temp = head;
+        while(temp!=nullptr){
+            // mp[temp] is the clone node and its next is the next original
+            // node's clone node. 
+            // mp[ptr->temp] refers to the clone node of ptr->next;
+            mp[temp]->next = mp[temp->next];
+            
+            //similar thing on random
+            mp[temp]->random = mp[temp->random];
+            temp = temp->next;
+        }
+        return mp[head];
+    }
+};
+/*
+- The first solution can be using a map which stores the given node of the LL and the new copy node we make 
+- Here we first map each of the given nodes with the copy nodes 
+- Secondly we map the next and random pointers of the given node to the copy node
+- This can be done easily whole traversing the LL only 
+*/
