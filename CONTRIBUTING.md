@@ -28,10 +28,6 @@ These are the listing of individuals to this project **who've finished five prob
 
 
 
-> <img src="https://avatars.githubusercontent.com/u/76945004?v=4" width="50"> [Manisha Parichha](https://github.com/MannyP31)
-
-
-
 
 <table>
 <tr><td align="center"><a href="https://github.com/RiturajGupta21"><kbd><img src="https://avatars3.githubusercontent.com/riturajgupta21?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Rituraj Gupta</b></sub></a><br /><a href="https://github.com/HacOkars/Hacktoberfest-2021/commits?author=riturajgupta21" title="Code"> :computer: </a> </td>
