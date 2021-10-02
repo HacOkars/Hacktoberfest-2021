@@ -1,0 +1,52 @@
+class Solution {
+public:
+    //recursive solution which failed on test 21/33
+    //so let's memoize it ;) 
+    bool isPalindrome (string & s, int i, int j){
+        while(i<j){
+            if(s[i]!=s[j]) return false;
+            i++; j--;
+        }
+        return true;
+    }
+    
+    int solve(string& s, int i, int j){
+        if(i>=j or isPalindrome(s,i,j))
+            return 0;
+        
+        int ans = INT_MAX;
+        
+        for(int k=i;k<=j-1;k++){
+            int temp = 1 + solve(s,i,k) + solve(s,k+1,j);
+            ans=min(ans,temp);
+        }
+        
+        return ans;
+    }
+    
+    int minCut(string s) {
+        int n = s.size();
+        return solve(s,0,n-1);
+    }
+};
+/*
+- this is the palindrome partitioning question which is based on MCm
+- this required just a samll change in our MCM format and we will be abel to find the minimum number of cuts
+- remember the four steps 
+- first one is identify the i and j 
+- second one is find the base condition 
+- third one is find the loop and the k nvalue needed 
+- fourth one is find a function to eveluate the temp answers 
+
+- here our initial i and j are 0 and n-1
+- our base condition is i>=j because if greater or equal to j then we will have an empty string or a string with only one character, which is already a palindrome 
+- one more base condition is needed if the subproblem string is already a palindrome then we dont need to cut it
+- hence we again define a function named isPalindrome which returns a boolean value
+- next we see our for loop 
+- we found that we have 2 schemes to do this work and both the schemes work efficiently
+- scheme1 :- k=i to k=j-1 and next subproblem i to k and k+1 to j
+- scheme1 :- k=i+1 to k=j and next subproblem i to k-1 and k to j
+- we choose the scheme one for now 
+- last one is the temp function which uses the min function to give the final answer 
+- so now lets code 
+*/

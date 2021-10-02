@@ -1,0 +1,16 @@
+class Solution {
+public:
+    int minTotalUntil(vector<vector<int>> triangle, int index, int height){
+        if(height+1==triangle.size())
+            return triangle[height][index];
+        int sum,m1,m2;
+        m1 = minTotalUntil(triangle,index,height+1);
+        m2 = minTotalUntil(triangle,index+1,height+1);
+        sum = triangle[height][index] + min(m1,m2);
+        return sum;
+    }
+    int minimumTotal(vector<vector<int>>& triangle) {
+        //now lets think recursively
+        return minTotalUntil(triangle,0,0);
+    }
+};

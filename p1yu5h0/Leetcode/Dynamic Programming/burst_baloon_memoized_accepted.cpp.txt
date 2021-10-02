@@ -1,0 +1,30 @@
+class Solution {
+public:
+    int solve(vector<int>& v, int i, int j, vector<vector<int>>& dp){
+        if(i>j)
+            return 0;
+        if(dp[i][j]!=-1)
+            return dp[i][j];
+        for(int k=i;k<=j;k++){
+            dp[i][j] = max(dp[i][j], solve(v,i,k-1,dp) + solve(v,k+1,j,dp) + v[i-1]*v[k]*v[j+1]);   
+        }
+        return dp[i][j];
+    }
+    int maxCoins(vector<int>& nums) {
+        int n = nums.size();
+        vector<vector<int>> dp(n + 1, vector<int>(n + 1, -1));
+        vector<int> nums1(n + 2, 1);
+        for (int i = 0; i < n; ++i) {
+            nums1[i + 1] = nums[i];
+        }
+        //lets take our first pointer at v[1] ie. i at v[1]
+        //lets take our second pointer at v[n] ie. j at v[n]
+        return solve(nums1, 1, n, dp);
+    }
+};
+/*
+- this question is just a variation of MCM 
+- its given that we have to consider 1 at the outer bounds region \
+- so lets add 1 to the front and back of the vector
+- now we have our vector made having 1 on both the ends
+*/

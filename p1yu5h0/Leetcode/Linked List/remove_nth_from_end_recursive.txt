@@ -1,0 +1,37 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* removeNthFromEnd(ListNode* head, int n) {    
+        ListNode* fast = head;
+        ListNode* slow = head;
+        while(n--){
+            fast = fast->next;
+        }
+        if(fast==nullptr){
+            return head->next;
+        }
+        while(fast->next!=nullptr){
+            fast = fast->next;
+            slow = slow->next;
+        }
+        slow->next = slow->next->next;
+        return head;
+    }
+};
+
+/*
+Now why do we use two pointers?
+We use it because we want one pointer at the (n+1)th node from the end and at the same time we must know that pointer is at the (n+1)th node from the end.
+So how do we know a pointer is at the (n+1)th node from the end. We use the only delimeter we have in a LL. The NULL pointer at the end of the list.
+Therefore thinking in reverse(as if we have reached the (n+1)th node from the end) we want a pointer at the last node to mark that we have reached the (n+1)th node from the end.
+Here in the example we can see that one pointer should point at the node 3 (the (n+1)th node from the end and to know that we are at node 3 we can have a pointer at the last node 5. This gives us the distance b/w them as 5-3+1 = 3 = (n+1). So we can now maintain this distance b/w the two pointers all the time and reach the last node and be sure that the other pointer is at the (n+1)th location.
+*/ 

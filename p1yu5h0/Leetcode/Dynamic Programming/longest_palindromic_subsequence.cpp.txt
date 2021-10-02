@@ -1,0 +1,38 @@
+class Solution {
+public:
+    int lcs(string x, string y){
+        int m = x.size(), n = y.size();
+        int dp[m+1][n+1];
+        for(int i=0;i<=m;i++)
+            dp[i][0] = 0;
+        for(int i=0;i<=n;i++)
+            dp[0][i] = 0;
+        for(int i=1;i<=m;i++){
+            for(int j=1;j<=n;j++){
+                if(x[i-1]==y[j-1]){
+                    dp[i][j] = 1 + dp[i-1][j-1];
+                } else {
+                    dp[i][j] = max(dp[i-1][j], dp[i][j-1]);
+                }
+            }
+        }
+        return dp[m][n];
+    }
+    int longestPalindromeSubseq(string s) {
+        string x = s;
+        reverse(s.begin(),s.end());
+        return lcs(x,s);
+    }
+};
+/*
+- we are given only one string 
+- asked to find the longest palindromic subsequence 
+- this question is till now 2/3rd similar to LCS but in the input we are given only 1 string 
+- in LCS we have 2 strings 
+- hence we need to think more and need to generate two strings to use lcs 
+- on careful observations we find that the second string should be the reverse of first string 
+- beacuse when we take the lcs of these two strings we get our desired output 
+- that is longest palindromic subsequence
+- hence final relation will look like 
+- LPS(string a) = LCS(string a, reverse(string a))
+*/

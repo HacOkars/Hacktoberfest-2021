@@ -1,0 +1,19 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    int getDecimalValue(ListNode* head, int res = 0) {
+        return head ? getDecimalValue(head->next, res * 2 + head->val) : res;
+    }
+};
+/*
+The recursive one was probably more fun, as it is often the case with straight one-liners; notice that in order for it to work we needed to modify the function signature, adding the accumulator variable res, defaulting it to 0 and returning it when head is NULL - ie: we are done:
+*/ 
