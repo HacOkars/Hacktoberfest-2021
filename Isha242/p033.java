@@ -25,7 +25,7 @@ public final class p033 implements EulerSolution {
 	 * Therefore we only need to consider the cases where n0 = d1 or n1 = d0.
 	 * In the first case, check that n1/d0 = n/d;
 	 * in the second case, check that n0/d1 = n/d.
-	 */
+	 */ 
 	public String run() {
 		int numer = 1;
 		int denom = 1;
