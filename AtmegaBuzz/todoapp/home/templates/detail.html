@@ -1,0 +1,48 @@
+{%extends 'base.html'%}
+
+{%block headers%}
+    {%load static%}
+    <link rel="stylesheet" href={% static 'home/css/detail.css' %}>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{%static 'home/js/index.js'%}"></script>
+    
+{%endblock%}
+
+{%block title%}detail{%endblock%}
+
+
+{%block content%}
+
+    <div class="TodosContainer">
+        <h3 style="font-weight: bolder;">Your Todos</h3>
+        <div class="Todos">
+
+            
+            <form method="POST" action="/update/{{todo_detail.id}}">{% csrf_token %}
+                <div class="card Todo" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title title">{{todo_detail.title}}</h5>
+                        <textarea type="text" name="description" class="form-control" id="description" placeholder="{{todo_detail.description}}" aria-describedby="basic-addon3"></textarea>
+                        <button class="btn btn-primary">Update</button> 
+                        <a href="/delete/{{todo_detail.id}}" class="btn btn-danger">Delete</a>                      
+                    </div>
+                    
+                </div>   
+            </form>             
+        </div>
+        {%if messages%}
+            {%for message in messages%}
+                <small style="color: green;">{{message}}</small>
+            {%endfor%}
+        {%endif%}
+    </div>
+
+    <script>
+        $(document).ready(()=>{
+
+            $("#description").val("{{todo_detail.description}}")
+
+        })
+    </script>
+
+{%endblock%}
