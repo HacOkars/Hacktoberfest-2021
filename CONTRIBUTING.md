@@ -65,4 +65,7 @@ These are the listing of individuals to this project **who've finished five prob
 <td align="center"><a href="https://github.com/Arman-ali-khan-786"><kbd><img src="https://avatars.githubusercontent.com/u/72055054?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Arman Ali Khan</b></sub></a><br /><a href="https://github.com/HacOkars/Hacktoberfest-2021/commits?author=Arman-ali-khan-786" title="Code"> :computer: </a> </td>
 </tr>
 </table>
+<table>
+    <td align="center"><a href="https://github.com/samyakjain26"><kbd><img src="https://avatars3.githubusercontent.com/samyakjain26?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Samyak Jain</b></sub></a><br /><a href="https://github.com/HacOkars/Hacktoberfest-2021/commits?author=samyakjain26" title="Code"> :computer: </a> </td>
+    </table>
 
