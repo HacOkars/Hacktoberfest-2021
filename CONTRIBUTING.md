@@ -62,6 +62,7 @@ These are the listing of individuals to this project **who've finished five prob
 <td align="center"><a href="https://github.com/vidhi09-tech"><kbd><img src="https://avatars3.githubusercontent.com/vidhi09-tech?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Vidhi Kumari</b></sub></a><br /><a href="https://github.com/HacOkars/Hacktoberfest-2021/commits?author=vidhi09-tech" title="Code"> :computer: </a> </td>
     <td align="center"><a href="https://github.com/ankitSaebby"><kbd><img src="https://avatars.githubusercontent.com/u/54979627?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Ankit Singh</b></sub></a><br /><a href="https://github.com/HacOkars/Hacktoberfest-2021/commits?author=ankitSaebby" title="Code"> :computer: </a> </td>
     <td align="center"><a href="https://github.com/TiwariSimona"><kbd><img src="https://avatars.githubusercontent.com/u/79264319?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Simona Tiwari</b></sub></a><br /><a href="https://github.com/HacOkars/Hacktoberfest-2021/commits?author=TiwariSimona" title="Code"> :computer: </a> </td>
+    <td align="center"><a href="https://github.com/samyakjain26"><kbd><img src="https://avatars3.githubusercontent.com/samyakjain26?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Samyak Jain</b></sub></a><br /><a href="https://github.com/HacOkars/Hacktoberfest-2021/commits?author=samyakjain26" title="Code"> :computer: </a> </td>
 </tr>
 </table>
 
