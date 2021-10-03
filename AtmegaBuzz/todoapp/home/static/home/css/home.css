@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    margin-top: 10%;
+}
+
+.TodoForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.TodoForm input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.TodoForm textarea{
+    margin-bottom: 20px;
+}
+
+
+
+.TodosContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 400px;
+    height: auto;
+    margin-top: 7%;
+}
+
+.Todos{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-top: 50px;
+}
+
+
+.Todo:hover{
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.555);
+    cursor: pointer;
+}
+

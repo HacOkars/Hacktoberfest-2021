@@ -1,0 +1,48 @@
+{%extends 'base.html'%}
+
+{%block headers%}
+{%load static%}
+<link rel="stylesheet" href="{%static 'home/css/home.css'%}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{%static 'home/js/home.js'%}"></script>
+{%endblock%}
+
+
+{%block title%}Todo{%endblock%}
+
+{%block content%}
+
+<div class="container">
+    <h1>Todo App</h1>
+    <form method="POST" id="form" class="d-flex TodoForm">{%csrf_token%}
+        <input name="title" id="todoInput" class="form-control me-2" type="search" placeholder="Todo Title" aria-label="Search">
+        <textarea name="desc" id="todoDesc" class="form-control me-2" type="search" placeholder="Todo Description" rows="5"
+            aria-label="Search"></textarea>
+        <button id="todoSubmitBtn" class="btn btn-outline-success" type="submit">Add Todo</button>
+    </form>
+
+
+</div>
+
+<div class="TodosContainer">
+    <h3 style="font-weight: bolder;">Your Todos</h3>
+    <div class="Todos">
+
+        {%for todo in todos%}
+
+                <div class="card Todo" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{todo.title}}</h5>
+                        <p class="description" class="card-text">{{todo.description|slice:"0:50"}}...</p>
+                        <a href="/detail/{{todo.id}}" class="btn btn-primary">Open</a>                       
+                    </div>
+                </div>
+        {%endfor%}
+            
+    </div>
+
+
+</div>
+
+
+{%endblock%}
