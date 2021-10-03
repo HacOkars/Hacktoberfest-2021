@@ -1,0 +1,74 @@
+//Simple Sorting Algorithems (Bubble,Selection,Insertion) Implementations JAVA
+class SimpleSort {
+    private int[] a;//ref to array a
+    private int nElems;//number of data items
+
+    //------------------------------------------------------
+    public SimpleSorting(int max) { //constructor
+        this.a = new int[max];
+        this.nElems = 0;
+    }
+
+    public void insert(int value) { //put element into array
+        this.a[this.nElems] = value;
+        this.nElems++;
+    }
+
+    public void display() {
+        System.out.print("Array : [ ");
+        for (int i = 0; i < nElems; i++) {
+            System.out.print(a[i] + " ,");
+        }
+        System.out.println("\b]");
+    }
+
+    private void swap(int index1, int index2) { //swaps array elements in a[index1] and a[index2]
+        int temp=a[index1];
+        a[index1]=a[index2];
+        a[index2]=temp;
+    }
+
+    public void bubbleSort() {
+        for(int i=0;i<nElems-1;i++){
+            for(int j=0;j<nElems-1-i;j++) {
+                if (a[j] > a[j + 1]) {
+                    swap(j, j+ 1);
+                }
+            }
+        }
+        System.out.print("Buble Sorting ->");
+        display();
+    }
+
+    public void selectionSort() {
+        for(int i=0;i<nElems-1;i++){
+            int minIndex=i;
+            for(int j=i+1;j<nElems;j++){
+                if(a[minIndex]>a[j]){
+                    minIndex=j;
+                }
+            }
+            swap(i,minIndex);
+        }
+        System.out.print("Selection Sorting ->");
+        display();
+    }
+
+    public void insertionSort() {
+        for(int i=1;i<nElems;i++){
+            int key=a[i];
+            int j=i-1;
+            while (j >= 0) {
+                if(a[j]>key){
+                    a[j+1]=a[j];
+                }else{
+                    break;
+                }
+                j--;
+            }
+            a[j+1]=key;
+        }
+        System.out.print("Insertion Sorting ->");
+        display();
+    }
+}
