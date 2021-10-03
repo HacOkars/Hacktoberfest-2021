@@ -57,6 +57,6 @@ These are the listing of individuals to this project **who've finished five prob
 <tr><td align="center"><a href="https://github.com/Shuwani"><kbd><img src="https://avatars3.githubusercontent.com/Shuwani?size=400" width="100px;" alt=""/></kbd><br /><sub><b>SHUWANI</b></sub></a><br /><a href="https://github.com/HacOkars/Hacktoberfest-2021/commits?author=Shuwani" title="Code"> :computer: </a> </td>
 <td align="center"><a href="https://github.com/CharalambosIoannou"><kbd><img src="https://avatars3.githubusercontent.com/CharalambosIoannou?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Charalambos Ioannou</b></sub></a><br /><a href="https://github.com/HacOkars/Hacktoberfest-2021/commits?author=CharalambosIoannou" title="Code"> :computer: </a> </td>
 <td align="center"><a href="https://github.com/vidhi09-tech"><kbd><img src="https://avatars3.githubusercontent.com/vidhi09-tech?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Vidhi Kumari</b></sub></a><br /><a href="https://github.com/HacOkars/Hacktoberfest-2021/commits?author=vidhi09-tech" title="Code"> :computer: </a> </td>
-<td align="center"><a href="https://github.com/ujjwaljamuar"><kbd><img src="https://avatars.githubusercontent.com/u/56722405?v=4?size=400" width="100px;" alt=""/></kbd><br /><sub><b>Ujjwal Jamuar</b></sub></a><br /><a href="https://github.com/HacOkars/Hacktoberfest-2021/commits?author=ujjwaljamuar" title="Code"> :computer: </a> </td>
+
 </tr>
 </table>
