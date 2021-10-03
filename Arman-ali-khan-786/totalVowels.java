@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class totalVowels {
     static ArrayList<Character> vol;
-    totalNoOfvowels(){
+    totalVowels(){
         vol = new ArrayList<Character>();
         vol.add('a');vol.add('e');vol.add('i');vol.add('o');vol.add('u');
         vol.add('A');vol.add('E');vol.add('I');vol.add('O');vol.add('U');
@@ -16,7 +16,7 @@ public class totalVowels {
         return false;       
     }
     public static void main(String[] args) {
-        totalNoOfvowels obj = new totalNoOfvowels();
+        totalVowels obj = new totalVowels();
         String s = "Javatpoint is a great site for learning Java.";
         int v = 0;
         for(int i = 0 ; i < s.length() ; i++){
