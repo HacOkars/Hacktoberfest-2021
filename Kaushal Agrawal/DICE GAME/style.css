@@ -1,0 +1,41 @@
+body{
+    background-color: yellow;
+
+}
+h2{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 300%;
+}
+.ff{
+    text-align: center;
+font-family: fantasy;
+font-size: 200%;
+}
+.fir{
+    font-style: italic;
+    position: relative;
+    left: 5cm;
+    display: inline-block;
+    
+}
+.sec{
+    font-style: italic;
+    
+    position: absolute;
+    left: 25cm;
+    top:5.4cm;
+    display: inline-block;
+}
+.firim{
+  position: relative;
+  left: 4cm;
+   
+}
+
+.secim{
+    position: absolute;
+    left: 23cm;
+    top:7.5cm;
+    
+  }
