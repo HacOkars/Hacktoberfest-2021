@@ -1,0 +1,48 @@
+package com.geekyscript;
+
+public class ComplexNum {
+    int real;
+    int imag;
+
+    public ComplexNum(int whole, int imag)
+    {
+        this.real = whole;
+        this.imag = imag;
+    }
+
+    public void addN(ComplexNum a){
+        this.real= this.real + a.real;
+        this.imag = this.imag + a.imag;
+        System.out.println("Sum is : " + this.real +" + i(" + this.imag +")");
+    }
+
+    public void subN(ComplexNum a){
+        this.real = 2*(this.real) - a.real;
+        this.imag = 2*(this.imag) - a.imag;
+        System.out.println("Difference is : " + this.real +" + i(" + this.imag +")");
+    }
+
+    public boolean equal(ComplexNum a){
+
+        if(this.real == a.real && this.imag == a.imag)
+        {
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+	
+        ComplexNum obj1 = new ComplexNum(6, 5);
+        ComplexNum obj2 = new ComplexNum(4, 9);
+        System.out.println("Are the Complex numbers equal : " + obj2.equal(obj1));
+        obj2.addN(obj1);
+        obj1.subN(obj2);
+
+    }
+}
