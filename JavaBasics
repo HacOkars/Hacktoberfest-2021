@@ -1,0 +1,26 @@
+package javabasics.Question1;
+
+class Arithmetic{
+    public int add(int a, int b){
+        int sum = a + b; 
+        return sum;
+    }
+}
+
+class Adder extends Arithmetic{  
+    public int callAdd(int a, int b){
+        return add(a, b);
+    }
+}
+
+public class JavaBasics_Question1 extends Adder {
+	
+	public static void main(String[] args) {
+		Adder a=new Adder();
+		int result;
+		result=a.callAdd(32,10);
+		
+		System.out.println(result);
+
+	}
+}
